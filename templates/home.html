@@ -13,6 +13,8 @@
       }
     </style>
     <body>
+
+      {% include 'navbar.html' %}
       <div class="container">
       <h1 class="text-center mb-4">{{company_name}} Careers</h1>
 
@@ -58,15 +60,22 @@
          
 
           {% endfor %}
-          </div
+
+          
+        
+        </div>
+
+        <div class="my-4" style="display:flex;flex-direction:column;align-items:center;">
+            <button class="mx-auto btn btn-primary btn-lg text-center" >Contact us</button>
+        </div>
 
         
 
-        <div class="text-center my-4">
-          <button class="btn btn-primary btn-lg" >Contact us</button>
-      </div>
+        
 
       </div>
+
+        {% include 'footer.html' %}
 
       </div>
       
